@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* gap: 4;
+    flex-direction: column;
+    justify-content: start;  */
+    padding: 3vw;
+    font-family: gilroy;
+}
+.container{
+    /* background-color: red; */
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2vw ;
+    /* align-items: center; */
+}
+input{
+    padding: 1vw 1vw;
+    font-size: 1vw;
+    border-radius: 1vw;
+    border: 2px solid black;
+}
+button{
+    /* width: fit-content; */
+    width: 100%;
+    padding: 1vw;
+    background-color: green;
+    border-radius: 1vw;
+    border: none;
+    color: white;
+       font-size: 1vw;
+}
+.list{
+
+    padding: 3vw;
+    background-color: rgb(180, 180, 255);
+    width: 50%;
+    height: 100%;
+    border-radius: 1vw;
+    margin-top: 2vw;
+}
+h1{
+    text-transform: capitalize;
+    display: flex;
+    align-items: center; 
+    gap: 1vw;
+}
+.list-item{
+    display: flex;
+    align-items: center;
+    font-size: .8vw;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+    border: 2px solid rgb(101, 101, 101);
+    border-radius: 1vw;
+    padding: 1vw 3vw;
+    /* width: 60%;   */
+    /* background-color: green; */
+}
+.delete-btn{
+    background-color: red;
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    border: 1px solid black;
+    color: white;
+    font-size: .8vw;
+    width: fit-content;
+    cursor: pointer;
+}   
+
+.checkbox{
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid black;
+    transform: scale(.6);
+    cursor: pointer;
+}
+.checkbox:checked{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(3, 198, 152);
+    border: 2px solid rgb(1, 43, 0);
+}
